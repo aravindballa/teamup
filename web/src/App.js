@@ -1,8 +1,32 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import socketIOClient from 'socket.io-client';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      content: "h",
+      endpoint: "http://localhost:4001"
+    };
+
+    this.socket = socketIOClient(this.state.endpoint);
+
+    this.socket.on('update content', content => {
+      console.log('updating..');
+      this.setState({ content });
+    });
+  }
+
+  handleChange = e => {
+    this.setState({
+      content: e.target.value
+    });
+    this.socket.emit('update content', e.target.value);
+  }
+
   render() {
     return (
       <div className="App">
@@ -13,6 +37,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
+        <input type="text" onChange={this.handleChange} value={this.state.content} />
+
       </div>
     );
   }
