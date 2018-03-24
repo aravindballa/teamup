@@ -1,5 +1,7 @@
 # Team up
 
+![demo](https://i.imgur.com/lev9yKg.gif)
+
 ![color-line](https://i.imgur.com/ufmIs45.png)
 
 A simple application to demonstrate Real time editing content with websockets.
