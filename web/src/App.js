@@ -37,7 +37,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <input type="text" onChange={this.handleChange} value={this.state.content} />
+        <textarea onChange={this.handleChange} value={this.state.content} />
 
       </div>
     );
