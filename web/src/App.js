@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import TeamEditor from './components/Editor';
+import SocketEditor from './components/SocketEditor';
 
 class App extends Component {
   render() {
@@ -9,7 +8,7 @@ class App extends Component {
       <div className="App">
         <h1>Team Up</h1>
         <div className="editor-comp">
-          <TeamEditor />
+          <SocketEditor />
         </div>
       </div>
     );
