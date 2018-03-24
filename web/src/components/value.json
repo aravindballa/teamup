@@ -9,7 +9,7 @@
             "object": "text",
             "leaves": [
               {
-                "text": "These two editors are kept "
+                "text": "These editors are kept "
               },
               {
                 "text": "in sync",
@@ -67,7 +67,7 @@
                 ]
               },
               {
-                "text": "this example doesn't showcase operational transforms or network communication, which are required for realtime editing with multiple people at once."
+                "text": "Ask your friend to open up the same url and start editing ✏️"
               }
             ]
           }
