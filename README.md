@@ -10,6 +10,6 @@ Socket io server which runs on `localhost:4001`. It handle the client connection
 
 ## `web`
 
-This is a React app which contains a `textarea` where we can write stuff (which syncs). This will be replaced by a RTE.
+This is a React app which contains a `Slate JS editor` where we can write stuff (which syncs).
 
 Any types of contributions are welcome.
