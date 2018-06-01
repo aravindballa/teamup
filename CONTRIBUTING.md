@@ -10,6 +10,8 @@ Thanks for being willing to contribute! ✨
 4. Go to `web` folder and make a copy of `.env.example` as `.env`. Then run `yarn install`
 5. `yarn start` in the `web` folder will start the application.
 
+Make sure the URL server is running and the URL at `.env` are the same.
+
 > Tip: Keep your `master` branch pointing at the original repository and make
 > pull requests from branches on your fork. To do this, run:
 >
